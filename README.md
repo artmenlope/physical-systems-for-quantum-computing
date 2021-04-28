@@ -13,7 +13,7 @@ For creating the figures, the [transmon_and_cpb.py](transmon_and_cpb.py) script 
 
 The created figures are the following ones:
 
-|![](images/CooperPairBoxEigenenergies.svg) | ![](transmonEnergyLevels.svg)|
+|![](images/CooperPairBoxEigenenergies.svg) | ![](images/transmonEnergyLevels.svg)|
 | ------------- | ------------- |
-|![](EmE01-ng.svg) | |
+|![](images/EmE01-ng.svg) | |
 
