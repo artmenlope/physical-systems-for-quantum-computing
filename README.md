@@ -8,3 +8,12 @@ To obtain the energy eigenstates of the qubits, the [transmon_and_cpb.py](transm
 </p>
 
 For further reference on this Hamiltonian you can check [this section of the Qiskit textbook](https://qiskit.org/textbook/ch-quantum-hardware/transmon-physics.html).
+
+For creating the figures, the [transmon_and_cpb.py](transmon_and_cpb.py) script is used by the [main_transmon_and_cpb.py](main_transmon_and_cpb.py) script as a module. The latter script is used for defining parameters and calling the functions from [transmon_and_cpb.py](transmon_and_cpb.py).
+
+The created figures are the following ones:
+
+|![](images/CooperPairBoxEigenenergies.pdf) | ![](transmonEnergyLevels.pdf)|
+| ------------- | ------------- |
+|![](EmE01-ng.pdf) | |
+
