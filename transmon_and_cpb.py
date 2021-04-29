@@ -296,6 +296,9 @@ def plot_Em_ng_subplots(kval,
     # Reshape the axis matrix to access it with only a single for loop.
     axs = np.reshape(axs, (1,4))[0]
     
+    # List for storing the values of E01 in each subplot.
+    E01_list = []
+    
     for i in range(4):
         
         axi = axs[i]
@@ -309,6 +312,7 @@ def plot_Em_ng_subplots(kval,
         E0 = ener[0] * 4*Ec
         E1 = ener[1] * 4*Ec
         E01 = E1 - E0 
+        E01_list.append(E01) # Store the value of E01.
         
         enerlist = [] # Rows will correspond to the different ng values,
                       # columns will correspond to the different energy states.
@@ -367,4 +371,19 @@ def plot_Em_ng_subplots(kval,
 
     plt.show()
     
-    return 
+    return np.asarray(E01_list)
+
+
+
+def getener(mat,kval):
+    
+    ''' 
+    Returns the first kval eigenvalues of mat.
+    '''
+    
+    ener=spy.eigvalsh(mat)
+    ener0=[]
+    for i in range(kval):
+        ener0.append(ener[i])
+        
+    return ener0
