@@ -25,8 +25,10 @@ phimax = np.pi # Maximum value of the phase variable in the plots. The minimum w
 ng_max = 1 # Maximum value of the charge offset in the plots. The minimum will be -ng_max.
 num_ngs = N # Number of points in the ng-space.
 
-enerlist, EmE01_list = plot_Em_ng(ng_max=ng_max, kval=kval, Ej=Ej, Ec=Ec, num_ngs=500, N=N, phimax=phimax)
+enerlist, EmE01_list = plot_Em_ng(ng_max=ng_max, kval=kval, Ej=Ej, Ec=Ec, num_ngs=num_ngs, N=N, phimax=phimax)
 
+mat = ham(phimax, N, potfun=josephson, param=Ej, ng=ng, Ej=Ej, Ec=Ec)
+Ei_list = getener(mat, kval) # List of the first kval energy eigenvalues.
 
 #%%
 # =============================================================================
@@ -51,4 +53,4 @@ plotstates(mat,kval,phimax,N,potfun=josephson,param=Ej, Ej=Ej, Ec=Ec)
 kval = 3 # Number of plotted energy states.
 Ej_list = [1, 5, 10, 50] # List of Josephson energies in GHz (hbar=1).
 Ec_list = [1, 1, 1, 1] # List of charging energies in GHz (hbar=1).
-plot_Em_ng_subplots(ng_max=ng_max, kval=kval, Ej_list=Ej_list, Ec_list=Ec_list, num_ngs=num_ngs, N=N, phimax=phimax)
+E01_list = plot_Em_ng_subplots(ng_max=ng_max, kval=kval, Ej_list=Ej_list, Ec_list=Ec_list, num_ngs=num_ngs, N=N, phimax=phimax)
