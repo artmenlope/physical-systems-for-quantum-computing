@@ -7,7 +7,7 @@
 
 This repository contains the Python scripts necessary to create some of the figures of my Physics degree end-of-degree project at the University of Alicante, which is supervised by [Joaquín Fernández Rossier](http://jfrossier.blogspot.com/) and is titled "Physical Systems For Quantum Computing". The base program was originally made by Joaquín for a class about quantum tunneling, quantum scattering and bounded states in a course on Quantum Mechanics. I edited and extended the program for adapting it to the transmon qubit and the Cooper pair box qubit. 
 
-In addition to this, the TikZ diagrams created in LaTeX for the superconducting qubits section of the end-of-degree project can be found at the [tikz](tikz) folder of this repository. In this folder, the source code, svg and pdf files of the diagrams can be found.
+In addition to this, the TikZ diagrams created in LaTeX for the superconducting qubits section of the end-of-degree project can be found at the [tikz](tikz) folder of this repository. In this folder, the tex source code, svg and pdf files of the diagrams can be found.
 
 ### Methods
 
