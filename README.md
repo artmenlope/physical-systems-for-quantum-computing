@@ -7,6 +7,8 @@
 
 This repository contains the Python scripts necessary to create some of the figures of my Physics degree end-of-degree project at the University of Alicante, which is supervised by [Joaquín Fernández Rossier](http://jfrossier.blogspot.com/) and is titled "Physical Systems For Quantum Computing". The base program was originally made by Joaquín for a class about quantum tunneling, quantum scattering and bounded states in a course on Quantum Mechanics. I edited and extended the program for adapting it to the transmon qubit and the Cooper pair box qubit. 
 
+In addition to this, the TikZ diagrams created in LaTeX for the superconducting qubits section of the end-of-degree project can be found at the [tikz](tikz) folder of this repository. In this folder, the source code, svg and pdf files of the diagrams can be found.
+
 ### Methods
 
 To obtain the energy eigenstates of the qubits, the [transmon_and_cpb.py](transmon_and_cpb.py) script solves the Schrödinger equation using the following Hamiltonian:
@@ -22,7 +24,15 @@ For creating the figures, the [transmon_and_cpb.py](transmon_and_cpb.py) script 
 
 The created figures are the following ones:
 
+**Python plots**
 |![](images/CooperPairBoxEigenenergies.svg) | ![](images/transmonEnergyLevels.svg)|
 | ------------- | ------------- |
 |![](images/EmE01-ng.svg) | |
+
+**TikZ Diagrams**
+|![](tikz/CooperPairBox.svg) | ![](tikz/JosephsonJunctionDiagram.svg)|
+| ------------- | ------------- |
+|![](tikz/TransmonCircuit.svg) | ![](tikz/TwoJosephsonJunctions.svg) |
+
+
 
