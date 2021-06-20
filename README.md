@@ -6,6 +6,12 @@ This repository contains the Python scripts necessary to create some of the figu
 
 In addition to this, the TikZ diagrams created in LaTeX for the superconducting qubits section of the end-of-degree project can be found at the [tikz](tikz) folder of this repository. In this folder, the tex source code, svg and pdf files of the diagrams can be found.
 
+The main document of the end-of-degree project can be found at the RUA of the University of Alicante using the following link:
+<p align="center">
+http://hdl.handle.net/10045/115887
+</p>
+The document is licensed under the terms of a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 license.
+
 ### Methods
 
 To obtain the energy eigenstates of the qubits, the [transmon_and_cpb.py](transmon_and_cpb.py) script solves the Schrödinger equation using the following Hamiltonian:
