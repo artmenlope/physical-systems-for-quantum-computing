@@ -17,7 +17,7 @@ The document is licensed under the terms of a Creative Commons Attribution-NonCo
 To obtain the energy eigenstates of the qubits, the [transmon_and_cpb.py](transmon_and_cpb.py) script solves the Schrödinger equation using the following Hamiltonian:
 
 $$
-\hat{H} = 4E_C (\hat{n}-n_g)^2 - E_J \cos\hat{\phi}\,.
+\hat{H} = 4E_C (\hat{n}-n_g)^2 - E_J \cos\hat{\phi}.
 $$
 
 For further reference on this Hamiltonian you can check [this section of the Qiskit textbook](https://qiskit.org/textbook/ch-quantum-hardware/transmon-physics.html).
